@@ -7,85 +7,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burzaco Market</title>
     <link rel="shortcut icon" href="../img/favicon.png">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
+    <div class="container">
+        <!-- inicia navbar -->
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../img/logo BM.jpeg"></a>
 
-        <a href="../index.html" class="logo">
-            <img src="../img/logo BM.jpeg" alt="Logo burzaco Market"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../views/Productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../views/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../views/envios.html">Envios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../views/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- termina navbar -->
 
-        <nav>
-            <ul>
-                <li><a href="../views/productos.html" target="_blank">Productos</a> </li>
-                <li><a href="../views/nosotros.html" target="_blank">Nosotros</a></li>
-                <li><a href="../views/envios.html" target="_blank">Envios</a> </li>
-                <li><a href="../views/contacto.html" target="_blank">Contacto</a> </li>
-            </ul>
-        </nav>
-    </header>
-    <div>
-        <fieldset>
-            <legend class="text-center">Que estas buscando</legend>
-            <label for="que estas buscando"></label>
-            <input type="text" id="que estas buscando" placeholder="que estas buscando">
-        </fieldset>
+        <h3 class="text-center">Productos nuevos por descubrir</h3>
+        <div class="row 100px">
+            <div class="card-group">
+                <div class="card">
+                    <img src="../img/imagenes termos/termo y mate rosa .jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación como introducción natural a contenido adicional. Este contenido es un poco más largo.</p>
+                        <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/imagenes termos/termo y mate azul.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta tarjeta tiene texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+                        <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../img/imagenes termos/WhatsApp Image 2022-05-25 at 10.00.46 PM.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Título de la tarjeta</h5>
+                        <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo a continuación como introducción natural a contenido adicional. Esta tarjeta tiene un contenido aún más largo que la primera para mostrar esa acción de igual altura.</p>
+                        <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="text-center">Recien Ingresados</h3>
+        <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide mt-3 h-50" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner mb-3">
+                    <div class="carousel-item active">
+                        <img src="../img/nuevos ingresos/WhatsApp Image 2022-06-04 at 2.45.32 PM.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/nuevos ingresos/WhatsApp Image 2022-06-04 at 2.45.28 PM.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/nuevos ingresos/WhatsApp Image 2022-06-04 at 2.44.49 PM.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/nuevos ingresos/WhatsApp Image 2022-06-04 at 2.44.43 PM.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <footer class="bg-light text-center text-white">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+
+                    <section class="mb-4">
+
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/burzaco-market-103549792372742/" role="button"><i class="fab fa-facebook-f"></i ></a>
+
+
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="https://www.twitter.com" role="button"><i class="fab fa-twitter"></i></a>
+
+
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="https://mail.google.com/burzacomarket@gmail.com" role="button"><i class="fab fa-google"></i></a>
+
+
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/burzaco_market?igshid=ymmymta2m2y=" role="button"><i class="fab fa-instagram"></i></a>
+
+
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
+                    </section>
+
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2022 Copyright:
+                    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+        </div>
     </div>
-
-    <div>
-
-        <img src="../img/imagenes termos/Originals/termoshorizontales.jpg" alt="foto de productos">
-
-    </div>
-    <h1>Encontras lo que buscas</h1>
-    <main>
-        <!-- inicia form-->
-        <section>
-            <form action="envio.php">
-                <fieldset>
-                    <legend>info personal</legend>
-                    <label for="name"> nombre</label>
-                    <input type="text" id="name" placeholder="juan Perez">
-                    <label for="email">email</label>
-                    <input type="email" id="email" placeholder="mail@burzaco market">
-                </fieldset>
-                <fieldset>
-                    <legend>Articulos</legend>
-                    <label for="mates">mates</label>
-                    <input type="checkbox" id="mates" value="mates">
-                </fieldset>
-                <fieldset>
-                    <legend>info de envios</legend>
-                    <label for="local">retiro en local</label>
-                    <input type="radio" id="local" name="envio" value="local">
-                    <br>
-                    <label for="envio">envio</label>
-                    <input type="radio" id="envio" name="envio" value="local">
-                </fieldset>
-                <fieldset>
-                    <label for="comprar">comprar</label>
-                    <input type="button" id="comprar" value="comprar">
-                </fieldset>
-            </form>
-        </section>
-        <!--ends form-->
-    </main>
-
-    <footer>
-        <h3>Nuestras Redes Sociales</h3>
-        <a href="https://www.facebook.com/burzaco-market-103549792372742/" target="_blank">
-            <img src="../img/iconos redes sociales/logo FB.png" alt="link a facebook"></a>
-
-        <a href="https://www.instagram.com/burzaco_market?igshid=ymmymta2m2y=" target="_blank">
-            <img src="../img/iconos redes sociales/logo insta.png" alt="lik a instagram"></a>
-
-        <a href="https://www.twitter.com" target="_blank">
-            <img src="../img/iconos redes sociales/logo twitter.png" alt="link a twitter"></a>
-
-        <a href="https://mail.google.com/burzacomarket@gmail.com" target="_blank">
-            <img src="../img/iconos redes sociales/logo wts.png" alt="email"></a>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>
