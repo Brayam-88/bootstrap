@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Hind:wght@300&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Hind:wght@300&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Hind:wght@300&family=Teko&display=swap');
+
+/* reset */
+
+.conteiner {
+    display: flex;
+}
+
+* {
+    font-family: 'Heebo', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%
+}
+
+p {
+    font-family: 'Heebo', sans-serif;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: black;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    width: 100%;
+    font-family: 'Hind', sans-serif;
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Hind', sans-serif;
+    font-size: 3rem;
+    color: black;
+}
+
+.text-end {
+    text-align: end;
+}
